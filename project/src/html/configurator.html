@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Konfigurator</title>
+
+    <meta name="viewport" content="user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/car.css">
+    <link rel="stylesheet" href="../css/ui.css">
+    <link rel="stylesheet"  href="../css/lightslider.css"/>
+    <link rel="stylesheet"  href="../css/carSlider.css"/>
+    <link rel="stylesheet" href="../css/main.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/current-device/umd/current-device.min.js"></script>
+    <script src="../js/lightslider.js"></script>
+
+  </head>
+
+  <body>
+
+    <div id="configurator">
+
+      <div id="header">
+        <p class="left">TФTДLE PRIJS</p>
+        <p id="totalPrice" class="right">0 RUB</p>
+      </div>
+
+      <div id="info"></div>
+
+      <div class="sliderContainer">
+
+        <div class="sliderBody">
+            <ul id="content-slider" class="content-slider">
+              <li>
+                  <div class="content-item">
+                    <div id="carSideContainer" class="carContainer clearfix">
+                    <div id="carSide" class="car white">
+
+                      <div id="roofShadowSide" class="shadow"></div>
+                      <div id="bodyShadowSide" class="shadow"></div>
+                      <div id="roofSide" class="roof"></div>
+                      <div id="bodySide" class="body"></div>
+                      <div id="window1Side" class="windowDark"></div>
+                      <div id="window2Side" class="windowNormal"></div>
+                      <div id="handle1Side" class="handle"></div>
+                      <div id="handle2Side" class="handle"></div>
+                      <div id="doorSide" class="none"></div>
+                      <div id="mirrorSide" class="handle"></div>
+                      <div id="backlightSide" class="backlight"></div>
+                      <div id="backlightReverseSide" class="reverselight"></div>
+                      <div id="backlightBlinkerSide" class="blinker"></div>
+                      <div id="frontlightSide" class="frontlight"></div>
+                      <div id="frontlightBlinkerSide" class="blinker"></div>
+                      <div id="stripingSide" class="none"></div>
+                      <div id="antennaSide" class="shadow"></div>
+                      <div id="sputnikSide" class="none"></div>
+
+                      <div id="towSide">
+                        <div id="tow3Side" class="wheelBack"></div>
+                        <div id="tow2Side" class="wheelBack"></div>
+                        <div id="tow1Side" class="tennis"></div>
+                      </div>
+
+                      <div id="wheel1Side" class="wheel">
+                        <div id="wheel1Rim" class="rim">
+                          <div class="disk"></div>
+                          <div class="pad"></div>
+                          <div class="spoke spoke1"></div>
+                          <div class="spoke spoke2"></div>
+                          <div class="spoke spoke3"></div>
+                          <div class="spoke spoke4"></div>
+                          <div class="spoke spoke5"></div>
+                          <div class="edge"></div>
+                         </div>
+                        <div class="center"></div>
+                      </div>
+
+                      <div id="wheel2Side" class="wheel">
+                        <div id="wheel2Rim" class="rim">
+                          <div class="disk"></div>
+                          <div class="pad"></div>
+                          <div class="spoke spoke1"></div>
+                          <div class="spoke spoke2"></div>
+                          <div class="spoke spoke3"></div>
+                          <div class="spoke spoke4"></div>
+                          <div class="spoke spoke5"></div>
+                          <div class="edge"></div>
+                         </div>
+                        <div class="center"></div>
+                      </div>
+
+                    </div>
+                    </div>
+                  </div>
+              </li>
+              <li>
+                  <div class="content-item">
+                    <div id="carBackContainer" class="carContainer clearfix">
+                    <div id="carBack" class="car white">
+
+                      <div id="roofShadowBack" class="shadow"></div>
+                      <div id="bodyShadowBack" class="shadow"></div>
+                      <div id="mirror1ShadowBack" class="shadow"></div>
+                      <div id="mirror2ShadowBack" class="shadow"></div>
+                      <div id="roofBack" class="roof"></div>
+                      <div id="bodyBack" class="body"></div>
+                      <div id="windowBack" class="windowDark"></div>
+                      <div id="mirror1Back" class="windowNormal"></div>
+                      <div id="mirror2Back" class="windowNormal"></div>
+
+                      <div id="backlight1Back">
+                        <div id="backlightBack" class="backlight"></div>
+                        <div id="backlightReverseBack" class="reverselight"></div>
+                        <div id="backlightBlinkerBack" class="blinker"></div>
+                      </div>
+
+                      <div id="backlight2Back">
+                        <div id="backlightBack" class="backlight"></div>
+                        <div id="backlightReverseBack" class="reverselight"></div>
+                        <div id="backlightBlinkerBack" class="blinker"></div>
+                      </div>
+
+                      <div id="logoBack" class=""></div>
+                      <div id="stripingBack" class="none"></div>
+                      <div id="antennaBack" class="shadow"></div>
+                      <div id="sputnikBack" class="none"></div>
+                      <div id="wheel1Back" class="wheelBack"></div>
+                      <div id="wheel2Back" class="wheelBack"></div>
+
+                       <div id="towBack">
+                        <div id="tow2Back" class="wheelBack"></div>
+                        <div id="tow1Back" class="tennis"></div>
+                      </div>
+
+                    </div>
+                    </div>
+                  </div>
+              </li>
+              <li>
+                  <div class="content-item">
+                    <div id="carFrontContainer" class="carContainer clearfix">
+                    <div id="carFront" class="car white">
+
+                      <div id="roofShadowBack" class="shadow"></div>
+                      <div id="bodyShadowBack" class="shadow"></div>
+                      <div id="mirror1ShadowBack" class="shadow"></div>
+                      <div id="mirror2ShadowBack" class="shadow"></div>
+                      <div id="roofBack" class="roof"></div>
+                      <div id="bodyBack" class="body"></div>
+                      <div id="windowFront" class="windowNormal"></div>
+
+                      <div id="wiper">
+                        <div id="wiper1Front" class="wheelBack"></div>
+                        <div id="wiper2Front" class="wheelBack"></div>
+                      </div>
+
+                      <div id="mirror1Back" class="handle"></div>
+                      <div id="mirror2Back" class="handle"></div>
+
+                      <div id="frontlight1Front">
+                        <div id="frontlightFront" class="frontlight"></div>
+                        <div id="frontlightBlinkerFront" class="blinker"></div>
+                      </div>
+
+                      <div id="frontlight2Front">
+                        <div id="frontlightFront" class="frontlight"></div>
+                        <div id="frontlightBlinkerFront" class="blinker"></div>
+                      </div>
+
+                      <div id="grilleFront" class="wheelBack"></div>
+                      <div id="logoFront" class=""></div>
+                      <div id="stripingBack" class="none"></div>
+                      <div id="antennaFront" class="shadow"></div>
+                      <div id="sputnikFront" class="none"></div>
+                      <div id="wheel1Back" class="wheelBack"></div>
+                      <div id="wheel2Back" class="wheelBack"></div>
+
+                    </div>
+                    </div>
+                  </div>
+              </li>
+            </ul>
+          </div>
+
+      </div>
+
+      <div id="page1" class="page none">
+        <div id="cheapEdition" class="block">
+          <h1>PROLETARIAAT</h1>
+          <h4>VERKRIJGBAAR VANAF</h4>
+          <p class="price">600.000 RUB</p>
+
+          <p class="title">Standaarduitrusting</p>
+          <ul>
+            <li>Ingebouwde grote leider aansteker</li>
+            <li>Glasnost interieurverlichting</li>
+            <li>Dubbele flessenhouder, 2 liter compatibel</li>
+          </ul>
+          <div class="bigButton">ŠELECTEEЯ</div>
+        </div>
+
+        <div id="sportEdition" class="block">
+          <h1>SPORT</h1>
+          <h4>VERKRIJGBAAR VANAF</h4>
+          <p class="price">622.750 RUB</p>
+
+          <p class="title">Standaarduitrusting</p>
+          <ul>
+            <li>Zwart getinte ruiten achteraan</li>
+            <li>Nadia Comaneci sportstriping</li>
+            <li>Spage age sportbladvering</li>
+          </ul>
+          <div class="bigButton">ŠELECTEEЯ</div>
+        </div>
+      </div>
+
+      <div id="page2" class="page none">
+        <div id="m512" class="block">
+          <h1>M512</h1>
+          <h4>VERKRIJGBAAR VANAF</h4>
+          <p class="price">600.000 RUB</p>
+
+          <h4>BRANDSTOF</h4>
+          <h3>Mazout</h3>
+          <h4>VERSNELLINGSBAK</h4>
+          <h3>Manueel</h3>
+          <h4>TYPE AANDRIJVING</h4>
+          <h3>Achterlinkerwielaandrijving</h3>
+
+          <div class="spacer20"></div>
+          <hr>
+
+          <p class="left">
+            Inhoud<br>
+            Max. vermogen<br>
+            Volledige cyclus<br>
+            Aantal versnellingen
+          </p>
+
+          <p class="right">
+            512 cc<br>
+            35 pk<br>
+            215 g/km<br>
+            3 versnellingen
+          </p>
+
+          <div class="bigButton">BEVЗSTIG</div>
+        </div>
+
+        <div id="m640" class="block">
+          <h1>M640</h1>
+          <h4>VERKRIJGBAAR VANAF</h4>
+          <p class="price">600.000 RUB</p>
+
+          <h4>BRANDSTOF</h4>
+          <h3>Mazout</h3>
+          <h4>VERSNELLINGSBAK</h4>
+          <h3>Manueel</h3>
+          <h4>TYPE AANDRIJVING</h4>
+          <h3>Achterlinkerwielaandrijving</h3>
+
+          <div class="spacer20"></div>
+          <hr>
+
+          <p class="left">
+            Inhoud<br>
+            Max. vermogen<br>
+            Volledige cyclus<br>
+            Aantal versnellingen
+          </p>
+
+          <p class="right">
+            640 cc<br>
+            45 pk<br>
+            247 g/km<br>
+            3 versnellingen
+          </p>
+
+          <div class="bigButton">BEVЗSTIG</div>
+        </div>
+
+        <div id="m1000" class="block">
+          <h1>M1000</h1>
+          <h4>VERKRIJGBAAR VANAF</h4>
+          <p class="price">600.000 RUB</p>
+
+          <h4>BRANDSTOF</h4>
+          <h3>Diesel</h3>
+          <h4>VERSNELLINGSBAK</h4>
+          <h3>Manueel</h3>
+          <h4>TYPE AANDRIJVING</h4>
+          <h3>Achterwielaandrijving</h3>
+
+          <div class="spacer20"></div>
+          <hr>
+
+          <p class="left">
+            Inhoud<br>
+            Max. vermogen<br>
+            Volledige cyclus<br>
+            Aantal versnellingen
+          </p>
+
+          <p class="right">
+            1000 cc<br>
+            60 pk<br>
+            288 g/km<br>
+            4 versnellingen
+          </p>
+
+          <div class="bigButton">BEVЗSTIG</div>
+        </div>
+      </div>
+
+      <div id="page3" class="page none">
+        <div class="block selected">
+          <h1>KLEUREN</h1>
+          <p id="colorTitle" class="title">Goulash Bruin</p>
+          <p id="colorPrice" class="price">11.750 RUB</p>
+
+          <div class="gridContainer">
+            <div id="whiteCarColor" class="white selected"></div>
+            <div id="greenCarColor" class="green selected"></div>
+            <div id="brown1CarColor" class="brown1"></div>
+            <div id="brown2CarColor" class="brown2"></div>
+            <div id="brown3CarColor" class="brown3"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="page4" class="page none">
+        <div class="block selected">
+          <h1>WIELEN</h1>
+          <p id="wheelTitle" class="title">Marx, Russisch staal</p>
+          <p id="wheelPrice" class="price">11.750 RUB</p>
+
+          <div class="gridContainer">
+            <div id="marxWheel" class="wheel1"></div>
+            <div id="leninWheel" class="wheel2"></div>
+            <div id="trotskiWheel" class="wheel3"></div>
+            <div id="maoWheel" class="wheel4"></div>
+            <div id="stalinWheel" class="wheel5"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="page5" class="page none">
+        <div class="block selected">
+          <h1>EXTERIEUR</h1>
+
+          <div id="stripingContainer">
+            <p class="title">Striping</p>
+            <p id="stripingTitle">Ochtendgloren Geel</p>
+            <p id="stripingPrice" class="price">0 RUB</p>
+
+            <div class="gridContainer">
+              <div id="stripingRed" class="stripingRed"></div>
+              <div id="stripingYellow" class="stripingYellow"></div>
+              <div id="stripingWhite" class="stripingWhite"></div>
+            </div>
+
+            <div class="spacer20"></div>
+          </div>
+
+          <p class="title">Deur</p>
+          <p id="doorTitle">Putin</p>
+          <p id="doorPrice" class="price">0 RUB</p>
+
+          <div class="gridContainer">
+            <div id="noDoor" class="nothing"></div>
+            <div id="putin" class="putin"></div>
+            <div id="star" class="star"></div>
+            <div id="kunstmaan" class="kunstmaan"></div>
+          </div>
+
+          <div class="spacer20"></div>
+
+          <p class="title">Sputnik Antennedop</p>
+          <p id="sputnikTitle">Volksleger groen</p>
+          <p id="sputnikPrice" class="price">1.100 RUB</p>
+
+          <div class="gridContainer">
+            <div id="noSputnik" class="nothing"></div>
+            <div id="sputnikGreen" class="sputnikGreen"></div>
+            <div id="sputnikRed" class="sputnikRed"></div>
+            <div id="sputnikPurple" class="sputnikPurple"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="page6" class="page none">
+        <div id="towOption" class="block">
+          <h1>Trekhaak</h1>
+          <p class="price">15.000 RUB</p>
+          <div class="bigButton">TOEVOEGEN</div>
+        </div>
+
+        <div id="sportsTowOption" class="block">
+          <h1>Sporttrekhaak met tennisbal</h1>
+          <p class="price">17.500 RUB</p>
+          <div class="bigButton">TOEVOEGEN</div>
+        </div>
+
+        <div id="vwOption" class="block">
+          <h1>Volkskapitalistische VW opsmuk</h1>
+          <p class="price">7.500 RUB</p>
+          <div class="bigButton">TOEVOEGEN</div>
+        </div>
+
+        <div id="audiOption" class="block">
+          <h1>Volkskapitalistische Audi opsmuk</h1>
+          <p class="price">7.500 RUB</p>
+          <div class="bigButton">TOEVOEGEN</div>
+        </div>
+
+        <div id="bmwOption" class="block">
+          <h1>Volkskapitalistische BMW opsmuk</h1>
+          <p class="price">7.500 RUB</p>
+          <div class="bigButton">TOEVOEGEN</div>
+        </div>
+
+        <div id="wiperOption" class="block">
+          <h1>Ruitenwisser</h1>
+          <p class="price">3.850 RUB</p>
+          <div class="bigButton">TOEVOEGEN</div>
+        </div>
+
+        <div id="radioOption" class="block">
+          <h1>Am radio</h1>
+          <p class="price">7.500 RUB</p>
+          <div class="bigButton">TOEVOEGEN</div>
+        </div>
+
+        <div id="cassetteOption" class="block">
+          <h1>Am radio met cassette</h1>
+          <p class="price">12.000 RUB</p>
+          <div class="bigButton">TOEVOEGEN</div>
+        </div>
+
+        <div id="interiorOption" class="block">
+          <h1>Fijnmazig juten interieur</h1>
+          <p class="price">15.000 RUB</p>
+          <div class="bigButton">TOEVOEGEN</div>
+        </div>
+
+        <div id="akOption" class="block">
+          <h1>Kalashnikov houder</h1>
+          <p class="price">3.000 RUB</p>
+          <div class="bigButton">TOEVOEGEN</div>
+        </div>
+      </div>
+
+      <div id="page7" class="page none">
+        <div class="block">
+          <h1>UW KEUZE</h1>
+
+          <h4>UITVOERING</h4>
+          <h3 id="endEdition">Sport</h3>
+          <h4>MOTOR</h4>
+          <h3 id="endMotor">M512</h3>
+          <h4>KLEUR</h4>
+          <h3 id="endColor">Siberië Wit</h3>
+          <h4>VELGEN</h4>
+          <h3 id="endWheel">Mao</h3>
+
+          <div class="spacer20"></div>
+          <p class="title">Gekozen opties</p>
+          <hr>
+
+          <p id="endOptions" class="left">
+            Ruitenwisser<br>
+            AM radio<br>
+            Juten interieur<br>
+            Trekhaak
+          </p>
+
+          <hr>
+
+          <div class="spacer20"></div>
+          <h4>TOTAALPRIJS</h4>
+          <h1 id="endTotalPrice">0 RUB</h1>
+        </div>
+      </div>
+
+        <div id="end"></div>
+
+      <div id="footer">
+        <div class="left none"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+      </div>
+
+    </div>
+
+    <script src="../js/car.js"></script>
+    <script src="../js/main.js"></script>
+
+  </body>
+
+</html>

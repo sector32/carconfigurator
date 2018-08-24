@@ -1,0 +1,26 @@
+/* SLIDER
+========= */
+html, body {
+  width: 100%;
+  display: block; }
+
+.sliderContainer .sliderBody {
+  margin-bottom: 60px;
+  height: 260px; }
+
+.sliderContainer {
+  position: relative;
+  margin: auto;
+  width: 350px; }
+
+.sliderBody ul {
+  list-style: none outside none;
+  padding-left: 0;
+  margin: 0; }
+
+.sliderBody .content-slider li {
+  text-align: center; }
+
+.sliderBody .content-item {
+  width: 350px;
+  height: 260px; }

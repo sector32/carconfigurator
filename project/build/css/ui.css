@@ -1,0 +1,171 @@
+body, html {
+  border: 0;
+  margin: 0;
+  height: 100%;
+  background-color: #999999; }
+
+.spacer20 {
+  width: 100%;
+  height: 20px; }
+
+#configurator {
+  width: 100%;
+  max-width: 750px;
+  height: 100%;
+  background-color: #e2e2e2;
+  position: relative;
+  content: "";
+  clear: both;
+  display: table; }
+  #configurator #header {
+    font-family: 'Russo One', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    width: 100%;
+    height: 30px;
+    background-color: black; }
+    #configurator #header p {
+      margin: 0; }
+      #configurator #header p.left {
+        float: left;
+        padding: 5px 0px 0px 8px; }
+      #configurator #header p.right {
+        float: right;
+        padding: 5px 8px 0px 0px; }
+  #configurator #info {
+    font-family: 'Russo One', sans-serif;
+    font-size: 16px;
+    color: #515151;
+    background-color: #fff;
+    padding: 5px 5px 5px 8px; }
+  #configurator #end {
+    width: 100%;
+    height: 40px; }
+  #configurator #footer {
+    position: fixed;
+    width: 100%;
+    max-width: 750px;
+    bottom: 0px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.9); }
+    #configurator #footer .left {
+      cursor: pointer;
+      float: left;
+      background-color: #898989;
+      width: 30px;
+      height: 30px;
+      background-image: url("../images/arrowLeft.svg");
+      background-repeat: no-repeat;
+      background-size: 20px 20px;
+      background-position: center; }
+    #configurator #footer .center {
+      font-family: 'Russo One', sans-serif;
+      font-size: 20px;
+      color: #515151;
+      position: absolute;
+      text-align: center;
+      width: calc(100% - 60px);
+      margin: 2px 0px 0 30px; }
+    #configurator #footer .right {
+      cursor: pointer;
+      float: right;
+      background-color: #ed0f0f;
+      width: 30px;
+      height: 30px;
+      background-image: url("../images/arrowRight.svg");
+      background-repeat: no-repeat;
+      background-size: 20px 20px;
+      background-position: center; }
+  #configurator .block {
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    color: #000;
+    margin: 11px;
+    padding: 12px;
+    border: 6px solid #aaaaaa;
+    background-color: white;
+    width: calc(100% - 58px);
+    content: "";
+    clear: both;
+    display: table; }
+    #configurator .block hr {
+      border: 1px solid #898989;
+      margin: 12px 0 12px 0;
+      clear: both; }
+    #configurator .block .bigButton {
+      font-family: 'Russo One', sans-serif;
+      font-size: 20px;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      clear: both;
+      cursor: pointer;
+      background-color: #898989;
+      width: 100%;
+      margin-top: 30px;
+      padding-top: 4px;
+      height: calc(32px - 4px); }
+    #configurator .block.selected {
+      border-color: #ed0f0f; }
+      #configurator .block.selected .bigButton {
+        color: #333;
+        background-color: #f8ca29; }
+    #configurator .block h1 {
+      font-family: 'Russo One', sans-serif;
+      font-size: 23px;
+      margin: 0 0 20px 0;
+      padding: 0px; }
+    #configurator .block h3 {
+      font-size: 20px;
+      margin: 0 0 10px 0;
+      padding: 0px; }
+    #configurator .block h4 {
+      font-size: 9px;
+      margin: 0 0 2px 0;
+      padding: 0px; }
+    #configurator .block p {
+      margin: 0 0 2px 0;
+      padding: 0px; }
+      #configurator .block p.left {
+        float: left;
+        font-size: 12px;
+        line-height: 20px;
+        padding-bottom: 20px; }
+      #configurator .block p.right {
+        font-weight: bold;
+        float: right;
+        font-size: 12px;
+        line-height: 20px;
+        padding-bottom: 20px; }
+      #configurator .block p.price {
+        font-weight: bold;
+        margin: 0 0 20px 0; }
+      #configurator .block p.title {
+        font-weight: bold; }
+    #configurator .block ul {
+      margin: 0 0 10px 0;
+      padding-left: 22px; }
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(10px, 60px));
+  grid-gap: 10px; }
+  .gridContainer div {
+    height: 60px;
+    border-bottom: 10px solid #fff;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; }
+    .gridContainer div.selected {
+      border-color: #f8ca29; }
+    .gridContainer div.wheel1 {
+      background-image: url("../images/wheel1.png"); }
+    .gridContainer div.wheel2 {
+      background-image: url("../images/wheel2.png"); }
+    .gridContainer div.wheel3 {
+      background-image: url("../images/wheel3.png"); }
+    .gridContainer div.wheel4 {
+      background-image: url("../images/wheel4.png"); }
+    .gridContainer div.wheel5 {
+      background-image: url("../images/wheel5.png"); }
